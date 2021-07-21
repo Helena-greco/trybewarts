@@ -59,7 +59,22 @@ input {
   border-radius: 4px;
 }
 
+hr {
+  width: 500px;
+
+}
+
+#section-family {
+  display: flex;
+}
+
 #family {
   display: flex;
   flex-direction: column;
+
+}
+
+#family2 {
+  display: flex;
+  flex-flow: column wrap;
 }
