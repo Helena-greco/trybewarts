@@ -58,3 +58,8 @@ h1 {
 input {
   border-radius: 4px;
 }
+
+#family {
+  display: flex;
+  flex-direction: column;
+}
