@@ -3,21 +3,6 @@
   padding: 0;
 }
 
-h1 {
-  align-self: center;
-  color: antiquewhite;
-}
-
-main {
-  display: flex;
-}
-
-#evaluation-form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
-}
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -30,8 +15,23 @@ main {
   align-items: center;
 }
 
+main {
+  display: flex;
+}
+
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
   justify-content: flex-end;
+}
+
+h1 {
+  align-self: center;
+  color: antiquewhite;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
