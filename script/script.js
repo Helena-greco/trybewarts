@@ -5,7 +5,7 @@ const submitBtn = document.getElementById('submit-btn');
 const checkboxAgreement = document.getElementById('agreement');
 
 function loginAlert() {
-  if (login.value !== 'tryber@teste.com' && password.value !== '123456') {
+  if (login.value !== 'tryber@teste.com' || password.value !== '123456') {
     alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
