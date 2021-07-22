@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Project Trybewarts</title>
 </head>
-
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="trybewarts-logo">
@@ -23,7 +21,7 @@
     <form method="GET" id="evaluation-form" class="d-flex ai-center fd-column">
       <h2 id="title-forms">Forms</h2>
       <br>
-      <div input-lastname>
+      <div id="name-lastname">
         <input type="text" id="input-name" class="form-control" placeholder="Nome">
         <input type="text" id="input-lastname" class="form-control" placeholder="Sobrenome">
       </div>
@@ -82,7 +80,6 @@
             <input type="checkbox" id="python" value="Python" class="subject">
             <label for="python">Python</label>
           </div>
-
         </div>
       </section>
       <hr>
@@ -130,26 +127,19 @@
             <label for="10">10</label>
           </div>
         </div>
-
         <br>
-
-        <div>
+        <div class="form-coment">
           <label for="coment" class="textarea">Deixe seu comentário:</label>
           <br>
           <textarea name="coment" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
         </div>
-
         <br>
-
-        <div>
+        <div class="form-coment">
           <input type="checkbox" id="agreement">
           <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         </div>
-
         <br>
-
         <button type="submit" id="submit-btn" class="btn btn-purple" disabled="disabled">Enviar</button>
-
         <br><br>
       </section>
     </form>
@@ -160,5 +150,4 @@
   </footer>
   <script src="./script/script.js"></script>
 </body>
-
 </html>
