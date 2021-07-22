@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.trybewarts-login input {
+  display: flex;
+  margin: 4px;
+}
+
 main {
   display: flex;
 }
@@ -78,7 +83,3 @@ hr {
   display: flex;
   flex-flow: column wrap;
 }
-
-/* #textarea {
-
-} */
