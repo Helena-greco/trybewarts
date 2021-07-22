@@ -79,3 +79,11 @@ hr {
   display: flex;
   flex-flow: column wrap;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(50, 167, 145);
+}
