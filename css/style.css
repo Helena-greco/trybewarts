@@ -15,11 +15,6 @@
   align-items: center;
 }
 
-.trybewarts-login input {
-  display: flex;
-  margin: 4px;
-}
-
 main {
   display: flex;
 }
@@ -62,6 +57,7 @@ h1 {
 
 input {
   border-radius: 4px;
+  margin: 4px;
 }
 
 hr {
