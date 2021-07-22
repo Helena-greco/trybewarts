@@ -68,7 +68,7 @@ hr {
   display: flex;
 }
 
-#family {
+#family1 {
   display: flex;
   flex-direction: column;
 
@@ -78,3 +78,7 @@ hr {
   display: flex;
   flex-flow: column wrap;
 }
+
+/* #textarea {
+
+} */
