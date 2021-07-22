@@ -40,7 +40,6 @@ hr {
 
 #email-house {
   display: flex;
-
 }
 
 .header {
@@ -55,6 +54,8 @@ hr {
   padding: 5px;
   height: 20px;
   width: 200px;
+  border: none;
+  margin: 3px;
 }
 
 .form-select {
@@ -67,10 +68,14 @@ hr {
 
 .p-5 {
   padding: 5px;
+  display: flex;
+  align-items: baseline;
 }
 
 .d-flex {
   display: flex;
+  margin-left: 20px;
+  justify-content: center;
 }
 
 .fd-column {
@@ -93,6 +98,7 @@ hr {
   background-color: purple;
   border: 1px solid purple;
   color: white;
+  margin-left: 45px;
 }
 
 .footer {
@@ -101,4 +107,34 @@ hr {
   align-items: center;
   height: 50px;
   background-color: rgb(50, 167, 145);
+}
+
+div {
+  padding: 10px;
+}
+
+.form-coment {
+  margin-left: 20px;
+}
+
+#input-name {
+  display: flex;
+  margin-right: 15px;
+  margin-left: 10px;
+  border: none;
+}
+
+#input-lastname {
+  width: 225px;
+  margin-left: 10px;
+  margin-right: 2px;
+  border: none;
+}
+
+#textarea {
+  border: none;
+}
+
+#house {
+  margin-left: 10px;
 }
