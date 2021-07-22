@@ -1,6 +1,8 @@
 const login = document.getElementById('login');
 const password = document.getElementById('password');
-const button = document.getElementById('submit-button');
+const submitButton = document.getElementById('submit-button');
+const submitBtn = document.getElementById('submit-btn');
+const checkboxAgreement = document.getElementById('agreement');
 
 function loginAlert() {
   if (login.value !== 'tryber@teste.com' && password.value !== '123456') {
@@ -10,4 +12,13 @@ function loginAlert() {
   }
 }
 
-button.addEventListener('click', loginAlert);
+function enableSubmitBtn() {
+  if (checkboxAgreement.checked) {
+    submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', 'disabled');
+  }
+}
+
+submitButton.addEventListener('click', loginAlert);
+checkboxAgreement.addEventListener('click', enableSubmitBtn);
