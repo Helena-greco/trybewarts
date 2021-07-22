@@ -3,26 +3,8 @@
   padding: 0;
 }
 
-.header {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  height: 85px;
-  justify-content: space-between;
-}
-
-.trybewarts-login {
-  display: flex;
-  align-items: center;
-}
-
-main {
-  display: flex;
-}
-
-#trybewarts-forms-logo {
-  display: flex;
-  height: 500px;
-  justify-content: flex-end;
+body {
+  background-color: rgb(235, 235, 235);
 }
 
 h1 {
@@ -31,12 +13,18 @@ h1 {
   font-size: 2.5rem;
 }
 
+hr {
+  width: 500px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  justify-content: flex-end;
+}
+
 #evaluation-form {
-  display: flex;
   width: 675px;
-  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
   margin-top: 30px;
 }
 
@@ -52,32 +40,59 @@ h1 {
 
 #email-house {
   display: flex;
+
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  height: 85px;
+  justify-content: space-between;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 5px;
+  height: 20px;
+  width: 200px;
+}
+
+.form-select {
+  border-radius: 5px;
+  padding: 5px;
+  height: 34px;
+  width: 177px;
+}
+
+
+.p-5 {
   padding: 5px;
 }
 
-input {
-  border-radius: 4px;
-  margin: 4px;
-}
-
-hr {
-  width: 500px;
-
-}
-
-#section-family {
+.d-flex {
   display: flex;
 }
 
-#family1 {
-  display: flex;
+.fd-column {
   flex-direction: column;
-
 }
 
-#family2 {
-  display: flex;
-  flex-flow: column wrap;
+.ai-center {
+  align-items: center;
+}
+
+.btn {
+  padding: 8px;
+  font-size: 0.8em;
+  font-weight: 900;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn-purple {
+  background-color: purple;
+  border: 1px solid purple;
+  color: white;
 }
 
 .footer {

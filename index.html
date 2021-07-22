@@ -13,74 +13,147 @@
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="trybewarts-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form method="GET" class="trybewarts-login">
-      <input type="text" id="login" placeholder="Login">
-      <input type="password" id="password" placeholder="Senha">
-      <button type="submit" id="submit-button">Enviar</button>
+    <form method="GET" class="d-flex ai-center trybewarts-login">
+      <input type="text" id="login" class="form-control" placeholder="Login">
+      <input type="password" id="password" class="form-control" placeholder="Senha">
+      <button type="submit" id="submit-button" class="btn btn-purple">Enviar</button>
     </form>
   </header>
-  <main>
-    <form method="GET" id="evaluation-form">
+  <main class="d-flex">
+    <form method="GET" id="evaluation-form" class="d-flex ai-center fd-column">
       <h2 id="title-forms">Forms</h2>
-      <div id="name-lastname">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <br>
+      <div input-lastname>
+        <input type="text" id="input-name" class="form-control" placeholder="Nome">
+        <input type="text" id="input-lastname" class="form-control" placeholder="Sobrenome">
       </div>
-      <div id="email-house">
-        <input type="email" id="input-email" placeholder="Email">
-        <label for="house" id="house-label">Casa:</label>
-        <select name="house" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
+      <div class="d-flex p-5">
+        <input type="email" id="input-email" class="form-control" placeholder="Email">
+        <div class="d-flex ai-center">
+          <label for="house" id="house-label">Casa:</label>
+          <select name="house" id="house" class="form-select">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
       <hr>
-      <section id="section-family">
-        <div id="family1">
+      <section class="d-flex">
+        <div class="d-flex fd-column">
           <label for="" id="label-family"> Qual sua família?</label>
-          <input type="radio" value="Frontend" name="family">Frontend
-          <input type="radio" value="Backend" name="family">Backend
-          <input type="radio" value="FullStack" name="family">FullStack
+          <div>
+            <input type="radio" id="frontend" value="Frontend" name="family">
+            <label for="frontend">Frontend</label>
+          </div>
+          <div>
+            <input type="radio" id="backend" value="Backend" name="family">
+            <label for="backend">Backend</label>
+          </div>
+          <div>
+            <input type="radio" id="fullStack" value="FullStack" name="family">
+            <label for="fullStack">FullStack</label>
+          </div>
         </div>
-        <div id="family2">
+        <div class="d-flex fd-column">
           <label for="subject" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <input type="checkbox" value="HoFs" class="subject"> HoFs
-          <input type="checkbox" value="Jest" class="subject"> Jest
-          <input type="checkbox" value="Promises" class="subject"> Promises
-          <input type="checkbox" value="React" class="subject"> React
-          <input type="checkbox" value="SQL" class="subject"> SQL
-          <input type="checkbox" value="Python" class="subject"> Python
+          <div>
+            <input type="checkbox" id="hofs" value="HoFs" class="subject">
+            <label for="hofs">HoFs</label>
+          </div>
+          <div>
+            <input type="checkbox" id="jest" value="Jest" class="subject">
+            <label for="jest">Jest</label>
+          </div>
+          <div>
+            <input type="checkbox" id="promises" value="Promises" class="subject">
+            <label for="promises">Promises</label>
+          </div>
+          <div>
+            <input type="checkbox" id="react" value="React" class="subject">
+            <label for="react">React</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sql" value="SQL" class="subject">
+            <label for="sql">SQL</label>
+          </div>
+          <div>
+            <input type="checkbox" id="python" value="Python" class="subject">
+            <label for="python">Python</label>
+          </div>
+
         </div>
       </section>
       <hr>
       <section>
-        <div>
+        <div class="d-flex">
           <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
-          <input type="radio" value="1" name="rate">1
-          <input type="radio" value="2" name="rate">2
-          <input type="radio" value="3" name="rate">3
-          <input type="radio" value="4" name="rate">4
-          <input type="radio" value="5" name="rate">5
-          <input type="radio" value="6" name="rate">6
-          <input type="radio" value="7" name="rate">7
-          <input type="radio" value="8" name="rate">8
-          <input type="radio" value="9" name="rate">9
-          <input type="radio" value="10" name="rate">10
+          <div>
+            <input type="radio" id="1" value="1" name="rate">
+            <label for="1">1</label>
+          </div>
+          <div>
+            <input type="radio" id="2" value="2" name="rate">
+            <label for="2">2</label>
+          </div>
+          <div>
+            <input type="radio" id="3" value="3" name="rate">
+            <label for="3">3</label>
+          </div>
+          <div>
+            <input type="radio" id="4" value="4" name="rate">
+            <label for="4">4</label>
+          </div>
+          <div>
+            <input type="radio" id="5" value="5" name="rate">
+            <label for="5">5</label>
+          </div>
+          <div>
+            <input type="radio" id="6" value="6" name="rate">
+            <label for="6">6</label>
+          </div>
+          <div>
+            <input type="radio" id="7" value="7" name="rate">
+            <label for="7">7</label>
+          </div>
+          <div>
+            <input type="radio" id="8" value="8" name="rate">
+            <label for="8">8</label>
+          </div>
+          <div>
+            <input type="radio" id="9" value="9" name="rate">
+            <label for="9">9</label>
+          </div>
+          <div>
+            <input type="radio" id="10" value="10" name="rate">
+            <label for="10">10</label>
+          </div>
         </div>
+
+        <br>
+
         <div>
           <label for="coment" class="textarea">Deixe seu comentário:</label>
+          <br>
           <textarea name="coment" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
         </div>
+
+        <br>
+
         <div>
-          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         </div>
-        <button type="submit" id="submit-btn" disabled="disabled">Enviar</button>
+
+        <br>
+
+        <button type="submit" id="submit-btn" class="btn btn-purple" disabled="disabled">Enviar</button>
+
+        <br><br>
       </section>
     </form>
-    <img src="images/trybewarts-colored.svg" alt="imagem trybewarts-colored" id="trybewarts-forms-logo">
+    <img src="images/trybewarts-colored.svg" alt="imagem trybewarts-colored" id="trybewarts-forms-logo" class="d-flex">
   </main>
   <footer class="footer">
     <p>Direitos reservados à Trybewarts©</p>
