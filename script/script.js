@@ -20,5 +20,5 @@ function enableSubmitBtn() {
   }
 }
 
-submitButton.addEventListener('click', loginAlert);
+submitButton.addEventListener('click', loginAlert); // botão submit
 checkboxAgreement.addEventListener('click', enableSubmitBtn);
